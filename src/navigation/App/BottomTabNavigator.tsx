@@ -10,11 +10,7 @@ interface BottomTabNavigatorProps {}
 
 const BottomTabNavigator: React.FC<BottomTabNavigatorProps> = ({}) => {
   return (
-    <Tab.Navigator
-      initialRouteName="Tab1"
-      activeColor="#f0edf6"
-      inactiveColor="#3e2465"
-      barStyle={{ backgroundColor: "#694fad" }}>
+    <Tab.Navigator initialRouteName="Tab1">
       <Tab.Screen
         name="Tab1"
         component={TabOneScreen}
@@ -40,6 +36,3 @@ const BottomTabNavigator: React.FC<BottomTabNavigatorProps> = ({}) => {
 };
 
 export default BottomTabNavigator;
-
-// dodaj
-// https://reactnavigation.org/docs/material-bottom-tab-navigator

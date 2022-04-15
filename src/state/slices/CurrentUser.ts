@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { User } from "firebase/auth";
 // import { doc, onSnapshot } from "firebase/firestore";
 
-let initialState: InitialReduxState = {
+let initialState: InitialCurrentUserState = {
   currentUser: null,
 };
 
