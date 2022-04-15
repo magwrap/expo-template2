@@ -1,5 +1,4 @@
-import * as actionCreators from "./action-creators";
-
-export { actionCreators };
-export { store } from "./store";
-export { State } from "./reducers";
+import store from "./store";
+export * from "./slices/CurrentUser";
+export {store};
+export {useAppDispatch, RootState} from "./store";

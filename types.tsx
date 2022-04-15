@@ -1,1 +1,3 @@
-
+type InitialReduxState = {
+  currentUser: null;
+};
