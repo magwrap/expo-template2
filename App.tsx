@@ -18,27 +18,7 @@ import {
 } from "react-native-paper";
 import { MyColors } from "@/styles/ColorPallete";
 import { useAppSelector } from "@/hooks/reduxHooks";
-
-const CombinedDefaultTheme = {
-  ...PaperDefaultTheme,
-  ...NavigationDefaultTheme,
-  colors: {
-    ...PaperDefaultTheme.colors,
-    ...NavigationDefaultTheme.colors,
-    primary: MyColors.PRIMARY,
-    accent: MyColors.ACCENT,
-  },
-};
-const CombinedDarkTheme = {
-  ...PaperDarkTheme,
-  ...NavigationDarkTheme,
-  colors: {
-    ...PaperDarkTheme.colors,
-    ...NavigationDarkTheme.colors,
-    primary: MyColors.PRIMARY,
-    accent: MyColors.ACCENT,
-  },
-};
+import { CombinedDarkTheme, CombinedDefaultTheme } from "@/styles/CobinedThems";
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
